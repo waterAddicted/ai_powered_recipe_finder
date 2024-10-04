@@ -1,4 +1,4 @@
-/* Container pentru întreaga pagină */
+
 .recipe-details-container {
     display: flex;
     flex-direction: row;
@@ -7,15 +7,15 @@
     margin: 20px;
 }
 
-/* Stilizarea coloanei din stânga */
+
 .recipe-left {
-    width: 200px; /* Fixăm lățimea imaginii și textului din stânga */
+    width: 200px; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Imaginea rețetei */
+
 .recipe-image {
     width: 200px;
     height: 200px;
@@ -23,7 +23,7 @@
     border-radius: 10px;
 }
 
-/* Numele rețetei */
+
 .recipe-title {
     margin-top: 10px;
     font-size: 22px;
@@ -31,7 +31,7 @@
     text-align: center;
 }
 
-/* Timpul total */
+
 .recipe-time {
     margin-top: 5px;
     font-size: 16px;
@@ -39,13 +39,12 @@
     text-align: center;
 }
 
-/* Coloana din dreapta pentru descriere */
+
 .recipe-right {
-    flex-grow: 1; /* Umple restul spațiului */
+    flex-grow: 1; 
     margin-left: 20px;
 }
 
-/* Descrierea rețetei */
 .recipe-description {
     font-size: 18px;
     line-height: 1.6;
