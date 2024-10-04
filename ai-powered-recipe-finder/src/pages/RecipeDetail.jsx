@@ -24,7 +24,7 @@ const RecipeDetails = () => {
                 }
 
                 const data = await response.json();
-                setRecipe(data); // Setăm datele odată ce au fost încărcate
+                setRecipe(data); 
             } catch (error) {
                 console.error(error);
             } finally {
@@ -35,12 +35,12 @@ const RecipeDetails = () => {
         fetchRecipeDetails();
     }, [id]);
 
-    // Afișăm un mesaj de încărcare dacă datele nu sunt încă disponibile
+    
     if (loading) {
         return <p>Loading...</p>;
     }
 
-    // Verificăm dacă rețeta există înainte de a accesa proprietățile sale
+    
     if (!recipe) {
         return <p>Recipe not found</p>;
     }
@@ -51,7 +51,7 @@ const RecipeDetails = () => {
             <img src={recipe.thumbnail_url} alt={recipe.name} />
             <p>{recipe.description}</p>
             <p>Total time: {recipe.total_time_minutes} minutes</p>
-            {/* Aici poți adăuga și alte detalii despre rețetă */}
+            { }
         </div>
     );
 };
