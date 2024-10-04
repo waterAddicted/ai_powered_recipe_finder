@@ -154,9 +154,9 @@ button[type="submit"]:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 458px; 
-    min-width: 458px;         /* Lățimea maximă a cardurilor */
+    min-width: 458px;         
     margin-bottom: 15px;
-    overflow: hidden;          /* Evită ca conținutul să iasă din card */
+    overflow: hidden;          
 }
 
 .recipe-card:hover {
@@ -165,14 +165,14 @@ button[type="submit"]:hover {
 }
 
 .recipe-image {
-    width: 100%;                /* Imaginea ocupă toată lățimea cardului */
-    height: 150px;              /* Înălțime fixă pentru toate imaginile */
-    object-fit: cover;          /* Ajustează imaginea pentru a umple containerul fără distorsiuni */
+    width: 100%;                
+    height: 150px;              
+    object-fit: cover;          
     border-radius: 8px;         /* Rounding corners to match card */
 }
 
 .recipe-card:hover .recipe-image {
-    transform: scale(1.05);     /* Scalează imaginea puțin la hover */
+    transform: scale(1.05);     
 }
 
 .recipe-details {
@@ -189,7 +189,7 @@ button[type="submit"]:hover {
     color: gray;
 }
 
-/* Favorite and view button alignment */
+
 .recipe-actions {
     display: flex;
     justify-content: center;
