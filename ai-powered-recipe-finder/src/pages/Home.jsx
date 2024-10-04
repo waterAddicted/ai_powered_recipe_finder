@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import '../Home.css';  // Asigură-te că stilurile sunt încărcate din acest fișier
+import '../Home.css';  
 import heart1 from '../images/heart1.png';
 import heart2 from '../images/heart2.png';
 import heart3 from '../images/heart3.png';
@@ -23,7 +23,7 @@ const Home = () => {
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',
-                    'x-rapidapi-key': '273f86a1b9mshbd1e909afee534cp1d2b2fjsn75fc8c677f6a', // Cheia ta reală
+                    'x-rapidapi-key': '273f86a1b9mshbd1e909afee534cp1d2b2fjsn75fc8c677f6a', 
                     'x-rapidapi-host': 'tasty.p.rapidapi.com',
                     'x-rapidapi-ua': 'RapidAPI-Playground'
                 },
@@ -62,7 +62,7 @@ const Home = () => {
     };
 
     const handleFavoriteToggle = (recipe, e) => {
-        e.preventDefault(); // Prevenim navigarea la click pe inimă
+        e.preventDefault(); 
         if (isFavorited(recipe.id)) {
             removeFavorite(recipe.id);
         } else {
@@ -102,7 +102,7 @@ const Home = () => {
                 </button>
             </Link>
 
-            {recipes.length > 0 && (  // Adăugăm titlul doar dacă există rețete
+            {recipes.length > 0 && (  
                 <h2 style={{ textAlign: 'center', marginTop: '20px' }}>Suggested Recipes</h2>
             )}
 
